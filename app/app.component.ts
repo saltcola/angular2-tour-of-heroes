@@ -1,8 +1,6 @@
-import { Component }       from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
-
-import { HeroService }     from './hero.service';
-// import { HeroesComponent } from './heroes.component';
+import { Component }          from '@angular/core';
+import { ROUTER_DIRECTIVES }  from '@angular/router';
+import { HeroService }        from './hero.service';
 @Component({
   selector: 'my-app',
   template: `
@@ -13,10 +11,10 @@ import { HeroService }     from './hero.service';
     </nav>
     <router-outlet></router-outlet>
   `,
-  styleUrls: ['app/app.component.css']
+  styleUrls: ['app/app.component.css'],
   directives: [ROUTER_DIRECTIVES],
   providers: [
-    HeroService
+    HeroService,
   ]
 })
 export class AppComponent {
